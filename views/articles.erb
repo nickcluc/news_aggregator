@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>slackr::nwz</title>
+  <link href="articles.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h1>slackr::nwz</h1>
+  <h2>when reddit isn't that cool anymore</h2>
+
+  <div class="navigation-container">
+    <ul class="nav">
+      <li>
+        <a href = '/articles' ><h4>Articles</h4></a>
+      </li>
+      <li>
+        <a href = '/articles/new' ><h4>Submit an Article</h4></a>
+      </li>
+    </ul>
+  </div>
+
+  <h2>articlz</h2>
+
+  <div class='list-container'>
+  <% @articles.each do |article| %>
+
+    <ul class='articles'>
+      <h3><%= article[0] %></h3>
+      <li><a href = '<%= article[1] %>'><%= article[1] %></a></li>
+      <p><%= article[2] %></p>
+    </ul>
+    <% end %>
+  </div>
+
+
+
+</body>
+</html>

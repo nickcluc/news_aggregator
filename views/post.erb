@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>slackr::newz</title>
+  <link href="../post.css" rel="stylesheet"/>
+</head>
+<body>
+  <h1>slackr::nwz</h1>
+  <h2>when reddit isn't that cool anymore</h2>
+
+  <div class="navigation-container">
+    <ul class="nav">
+      <li>
+        <a href = '/articles' ><h4>Articles</h4></a>
+      </li>
+      <li>
+        <a href = '/articles/new' ><h4>Submit an Article</h4></a>
+      </li>
+    </ul>
+  </div>
+
+  <h1>Post a new article</h1>
+  <div class="form-container">
+    <form action="/articles/confirm" method="post" id="article_form">
+      <p><label for="article_name_input">Article Name</label><br>
+      <input type="text" name="article_name" id="article_name_input"></p>
+
+      <p><label for="article_url_input">URL</label><br>
+      <input type="url" name="article_url" id="article_url_input"></p>
+
+      <p><label for="article_description_input">Description</label><br>
+      <textarea rows="4" cols="50" name="article_description" form="article_form"></textarea></p>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

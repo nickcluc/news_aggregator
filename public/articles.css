@@ -1,0 +1,27 @@
+h1 {
+  font-family: Courier;
+}
+
+.navigation-container {
+  background: #e7ecee;
+}
+
+.nav li {
+  font-family: Courier;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.list-container{
+  /* border: 1px solid; */
+}
+
+.articles {
+  border-top: 1px groove;
+  border-bottom: 1px groove;
+  background: #e7ecee;
+}
+
+.articles li {
+  list-style: none;
+}
